@@ -1,7 +1,7 @@
 apiVersion: radix.equinor.com/v1
 kind: RadixApplication
 metadata:
-  name: stoo-radix-example
+  name: stoo-radix-example 
 spec:
   environments:
     - name: production
