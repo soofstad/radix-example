@@ -21,14 +21,14 @@ RUN npm install
 
 #
 # Potentially running test, linting, security check +++
-#
-FROM dependencies as test
-WORKDIR /usr/src/app
-#COPY test test
-#RUN ["npm","test"]
-COPY .eslintrc.json .eslintignore ./
-RUN npm run lint
-RUN npm audit
+# #
+# FROM dependencies as test
+# WORKDIR /usr/src/app
+# #COPY test test
+# #RUN ["npm","test"]
+# COPY .eslintrc.json .eslintignore ./
+# RUN npm run lint
+# RUN npm audit
 
 #
 # Release image
